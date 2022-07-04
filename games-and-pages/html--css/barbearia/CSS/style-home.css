@@ -1,0 +1,71 @@
+:root {
+    --text-align: center;
+    --font-size: 17px;
+    --font-family: 'Heebo', sans-serif;
+    --color: #0000cd;
+    --margin: 0;
+    --font-prf: 17px;
+    --color-text: #2c2c2c;
+    --background: #CCCC;
+    --width-banner: 100%;
+    --height-banner: 400px;
+}
+
+body {
+    margin: 0;
+}
+
+#banner-img {
+    width: var(--width-banner);
+    height: var(--height-banner);
+}
+
+.titulo-centralizado {
+    text-align: var(--text-align);
+    font-family: var(--font-family);
+    color: var(--color-titles);
+}
+
+.titulo-principal {
+    font-family: var(--font-family);
+    padding-left: 20px;
+}
+
+p {
+    text-align: var(--text-align);
+    font-size: var(--font-prf);
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+em strong {
+    font-size: var(--font-size);
+    color: var(--color);
+
+}
+
+.principal {
+    background-color: var(--background);
+    padding: 30px;
+}
+
+#beneficios-img {
+    width: 50%;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.beneficios {
+    padding: 20px;
+}
+
+.items {
+    font-style: italic;
+    margin-right: 40px;
+}
