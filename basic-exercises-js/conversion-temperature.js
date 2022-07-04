@@ -8,7 +8,7 @@
 const convertCelsiusFahrenheit = (celsius) => {
   let fahrenheit = (9 * celsius) / 5 + 32;
 
-  return ` The result of converting ${celsius} °C to Fahrenheit is ${fahrenheit} °F;`;
+  return ` The result of converting ${celsius} °C to Fahrenheit is ${fahrenheit} °F`;
 };
 
 console.log(convertCelsiusFahrenheit(60));
