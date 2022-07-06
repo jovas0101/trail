@@ -7,12 +7,13 @@ const number = (a, b, c) => {
   }
 
   if (a > c && b > c) {
-    return `${a + b}`;
-  }
+    return a + b;
+  } 
   if (a > b && c > b) {
-    return `${a + c}`;
-  } else {
-    return `${b + c}`;
+    return a + c;
+  }
+   else {
+    return b + c;
   }
 };
 

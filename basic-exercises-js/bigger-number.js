@@ -5,12 +5,12 @@ const number = (a, b, c) => {
     return ` It is not possible to compare the same numbers! `;
   }
   if (a > b && a > c) {
-    return ` Number ${a} is greater than ${b} and ${c} `;
+    return ` Number ${a} is greater than ${b} and ${c}`;
   }
   if (b > a && b > c) {
-    return ` Number ${b} is greater than ${a} and ${c} `;
+    return ` Number ${b} is greater than ${a} and ${c}`;
   } else {
-    return ` Number ${c} is greater than ${a} and ${b} `;
+    return ` Number ${c} is greater than ${a} and ${b}`;
   }
 };
 

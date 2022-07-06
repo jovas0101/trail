@@ -4,13 +4,13 @@
 
 const numbers = (a, b) => {
   if (a === b && b === a) {
-    return `Equal numbers!`;
+    return ` Cannot repeat numbers!`;
   }
   if (a > b) {
-    return `First number is bigger!`;
+    return ` First number is bigger!`;
   }
   if (b > a) {
-    return `Second number is bigger!`;
+    return ` Second number is bigger!`;
   }
 };
 
