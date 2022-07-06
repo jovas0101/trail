@@ -2,7 +2,9 @@
 //and write the largest of them.
 
 const number = (a, b, c) => {
-  if (a === b || a === c || b === a || b === c || c === a || c === b) {
+  if (a === b || a === c || 
+      b === a || b === c || 
+      c === a || c === b) {
     return `Cannot repeat numbers`;
   }
 

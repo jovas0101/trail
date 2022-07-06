@@ -1,7 +1,9 @@
 // Start a program to read 3 values ​​(consider that equal values ​​will not be informed)
 //and write the largest of them.
 const number = (a, b, c) => {
-  if (a === b || a === c || b === a || b === c || c === a || c === b) {
+  if (a === b || a === c || 
+      b === a || b === c || 
+      c === a || c === b) {
     return ` It is not possible to compare the same numbers! `;
   }
   if (a > b && a > c) {
