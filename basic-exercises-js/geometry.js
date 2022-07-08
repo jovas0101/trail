@@ -26,3 +26,38 @@ const calculateArea = (base, height) => {
 };
 
 console.log(calculateArea(45, 45));
+
+// ------ CLASSES ------
+// using classes to calculate circumference!
+
+class Circumference {
+  constructor(radius) {
+    this.radius = radius;
+  }
+  calcCircumference() {
+    let valueCircumference = 2 * Math.PI * this.radius;
+
+    return ` The calculated circumference is ${valueCircumference}`;
+  }
+}
+
+let circumference = new Circumference(60);
+console.log(circumference.calcCircumference());
+
+// ------ CLASSES ------
+// using classes to calculate area!
+
+class Area {
+  constructor(base, hight) {
+    this.base = base;
+    this.hight = hight;
+  }
+  calcArea() {
+    let valueArea = this.base * this.hight;
+
+    return ` The area measures ${valueArea}`;
+  }
+}
+
+let area = new Area(45, 45);
+console.log(area.calcArea());

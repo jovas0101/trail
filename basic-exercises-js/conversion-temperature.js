@@ -25,3 +25,37 @@ const convertFahrenheitCelsius = (fahrenheit) => {
 };
 
 console.log(convertFahrenheitCelsius(60));
+
+// ------ CLASSES ------
+// using classes for celsius to fahrenheit conversion!
+
+class Fahrenheit {
+  constructor(celsius) {
+    this.celsius = celsius;
+  }
+  convertcelsius() {
+    let valueFahrenheit = (9 * this.celsius) / 5 + 32;
+
+    return ` The result of converting ${this.celsius} °C to Fahrenheit is ${valueFahrenheit} °F`;
+  }
+}
+
+let fahrenheit = new Fahrenheit(60);
+console.log(fahrenheit.convertcelsius());
+
+// ------ CLASSES ------
+// using classes for fahrenheit to celsius conversion!
+
+class Celsius {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+  convertFahrenheit() {
+    let valueCelsius = (5 * (this.fahrenheit - 32)) / 9;
+
+    return ` The result of converting ${this.fahrenheit} °F to Celsius is ${valueCelsius} °C`;
+  }
+}
+
+let celsius = new Celsius(60);
+console.log(celsius.convertFahrenheit());
