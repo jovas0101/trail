@@ -32,10 +32,10 @@ console.log(calculateArea(45, 45));
 
 class Circumference {
   constructor(radius) {
-    this.radius = radius;
+    this._radius = radius;
   }
   calcCircumference() {
-    let valueCircumference = 2 * Math.PI * this.radius;
+    let valueCircumference = 2 * Math.PI * this._radius;
 
     return ` The calculated circumference is ${valueCircumference}`;
   }
@@ -49,11 +49,11 @@ console.log(circumference.calcCircumference());
 
 class Area {
   constructor(base, hight) {
-    this.base = base;
-    this.hight = hight;
+    this._base = base;
+    this._hight = hight;
   }
   calcArea() {
-    let valueArea = this.base * this.hight;
+    let valueArea = this._base * this._hight;
 
     return ` The area measures ${valueArea}`;
   }

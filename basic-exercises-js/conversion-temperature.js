@@ -31,12 +31,12 @@ console.log(convertFahrenheitCelsius(60));
 
 class Fahrenheit {
   constructor(celsius) {
-    this.celsius = celsius;
+    this._celsius = celsius;
   }
   convertcelsius() {
-    let valueFahrenheit = (9 * this.celsius) / 5 + 32;
+    let valueFahrenheit = (9 * this._celsius) / 5 + 32;
 
-    return ` The result of converting ${this.celsius} °C to Fahrenheit is ${valueFahrenheit} °F`;
+    return ` The result of converting ${this._celsius} °C to Fahrenheit is ${valueFahrenheit} °F`;
   }
 }
 
@@ -48,12 +48,12 @@ console.log(fahrenheit.convertcelsius());
 
 class Celsius {
   constructor(fahrenheit) {
-    this.fahrenheit = fahrenheit;
+    this._fahrenheit = fahrenheit;
   }
   convertFahrenheit() {
-    let valueCelsius = (5 * (this.fahrenheit - 32)) / 9;
+    let valueCelsius = (5 * (this._fahrenheit - 32)) / 9;
 
-    return ` The result of converting ${this.fahrenheit} °F to Celsius is ${valueCelsius} °C`;
+    return ` The result of converting ${this._fahrenheit} °F to Celsius is ${valueCelsius} °C`;
   }
 }
 
